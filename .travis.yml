@@ -3,13 +3,13 @@ node_js:
   - "8"
 
 install:
-  - yarn
+  - npm install
 
 script:
-  - yarn lint
+  - npm run lint
 
 before_deploy:
-  - yarn build
+  - npm run build
 
 deploy:
   provider: firebase
